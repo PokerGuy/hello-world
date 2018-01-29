@@ -1,3 +1,5 @@
 #!/bin/bash
 
-serverless deploy
+npm install
+
+serverless deploy AWS_ENV $1

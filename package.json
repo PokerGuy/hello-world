@@ -1,0 +1,23 @@
+{
+  "name": "hello-world",
+  "version": "1.0.0",
+  "description": "",
+  "main": "handler.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PokerGuy/hello-world.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PokerGuy/hello-world/issues"
+  },
+  "homepage": "https://github.com/PokerGuy/hello-world#readme",
+  "devDependencies": {
+    "serverless-domain-manager": "^2.2.2"
+  }
+}
