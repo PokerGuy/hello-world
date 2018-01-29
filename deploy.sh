@@ -2,4 +2,4 @@
 
 npm install
 
-serverless deploy AWS_ENV $1
+serverless deploy --AWS_ENV $1
