@@ -1,12 +1,19 @@
 service: hello-world
+plugins:
+  - serverless-domain-manager
 provider:
   name: aws
   runtime: nodejs6.10
   region: us-west-2
+custom:
+  customDomain:
+    domainName: ${file(./serverless.env.yml):${opt:AWS_ENV}.api_url}
+    basePath: 'hello'
+    createRoute53Record: true
 functions:
   hello:
     handler: handler.hello
     events:
       - http:
-          path: hello
+          path: /
           method: get
