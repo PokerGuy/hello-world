@@ -1,12 +1,10 @@
 'use strict';
 
-module.exports.hello = (event, context, callback) => {
-  const response = {
+module.exports.hello = async (event, context) => {
+  return {
     statusCode: 200,
     body: JSON.stringify({
-      message: 'hello juan from sandbox'
+      message: 'hello node8 from sandbox'
     }),
   };
-
-  callback(null, response);
 };
